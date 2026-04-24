@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — Cool Air Enterprises | AC &amp; HVAC Mumbai</title>
+  <meta name="description" content="Cool Air Enterprises provides AC installation, HVAC systems, AMC/CAMC contracts, ventilation systems and repair services across Mumbai." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cg stroke='%2338bdf8' stroke-width='2' stroke-linecap='round'%3E%3Cline x1='16' y1='3' x2='16' y2='29'/%3E%3Cline x1='3' y1='16' x2='29' y2='16'/%3E%3Cline x1='7.5' y1='7.5' x2='24.5' y2='24.5'/%3E%3Cline x1='24.5' y1='7.5' x2='7.5' y2='24.5'/%3E%3Cline x1='16' y1='8' x2='13' y2='5'/%3E%3Cline x1='16' y1='8' x2='19' y2='5'/%3E%3Cline x1='24' y1='16' x2='27' y2='13'/%3E%3Cline x1='24' y1='16' x2='27' y2='19'/%3E%3Cline x1='16' y1='24' x2='13' y2='27'/%3E%3Cline x1='16' y1='24' x2='19' y2='27'/%3E%3Cline x1='8' y1='16' x2='5' y2='13'/%3E%3Cline x1='8' y1='16' x2='5' y2='19'/%3E%3C/g%3E%3C/svg%3E" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Three.js CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="nav-logo-main">COOL AIR</span>
+        <span class="nav-logo-sub">Enterprises</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- ===== PAGE HERO ===== -->
+  <header class="page-hero">
+    <canvas class="page-hero-canvas" id="page-hero-canvas"></canvas>
+    <div class="page-hero-gradient"></div>
+    <div class="container page-hero-content">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="sep">/</span>
+        <span>Services</span>
+      </div>
+      <h1>Our <span class="accent">Services</span></h1>
+      <p class="subheading" style="margin-top:16px; max-width:560px;">End-to-end HVAC and air conditioning solutions — designed with precision, delivered with integrity.</p>
+    </div>
+  </header>
+
+  <!-- ===== SERVICE SECTIONS ===== -->
+  <div class="services-page">
+    <div class="container">
+
+      <!-- ---- 01. AC INSTALLATION ---- -->
+      <div class="service-section reveal">
+        <div class="service-visual">
+          <div class="service-visual-box tilt-card">
+            <svg class="service-big-icon" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="22" width="72" height="32" rx="7" stroke="#38bdf8" stroke-width="2.5"/>
+              <line x1="8" y1="42" x2="80" y2="42" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4 3" opacity="0.6"/>
+              <circle cx="65" cy="32" r="3.5" fill="#38bdf8"/>
+              <circle cx="55" cy="32" r="3.5" fill="#38bdf8" opacity="0.6"/>
+              <line x1="24" y1="54" x2="24" y2="68" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="64" y1="54" x2="64" y2="68" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="18" y1="68" x2="70" y2="68" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M24 48 Q26 58 34 58" stroke="#38bdf8" stroke-width="2" fill="none" opacity="0.7"/>
+              <path d="M38 48 Q40 58 48 58" stroke="#38bdf8" stroke-width="2" fill="none" opacity="0.5"/>
+            </svg>
+            <div class="service-visual-label">AC INSTALLATION</div>
+          </div>
+        </div>
+        <div class="service-text">
+          <span class="section-tag">Service 01</span>
+          <h2>AC <span class="accent">Installation</span></h2>
+          <p>We handle the complete installation lifecycle — from site assessment and load calculation to equipment supply, mounting, piping, electrical connections and commissioning. Every installation is clean, concealed and built to last.</p>
+          <ul class="service-bullets">
+            <li>Split AC installation (all brands and tonnages)</li>
+            <li>Window AC installation and setup</li>
+            <li>Cassette and ceiling-mounted AC systems</li>
+            <li>VRV / VRF multi-indoor systems for large spaces</li>
+            <li>Ductable AC systems for offices and malls</li>
+            <li>Concealed copper piping and trunking</li>
+            <li>Electrical cabling and MCB fitout</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary">Enquire Now →</a>
+        </div>
+      </div>
+
+      <!-- ---- 02. HVAC SYSTEMS ---- -->
+      <div class="service-section reversed reveal">
+        <div class="service-visual">
+          <div class="service-visual-box tilt-card">
+            <svg class="service-big-icon" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="10" y="14" width="68" height="14" rx="3" stroke="#38bdf8" stroke-width="2.5"/>
+              <rect x="10" y="36" width="68" height="14" rx="3" stroke="#38bdf8" stroke-width="2.5"/>
+              <rect x="10" y="58" width="68" height="14" rx="3" stroke="#38bdf8" stroke-width="2.5"/>
+              <line x1="30" y1="14" x2="30" y2="72" stroke="#38bdf8" stroke-width="1.5" opacity="0.3" stroke-dasharray="3 2"/>
+              <circle cx="68" cy="21" r="3" fill="#38bdf8"/>
+              <circle cx="68" cy="43" r="3" fill="#38bdf8" opacity="0.6"/>
+              <circle cx="68" cy="65" r="3" fill="#38bdf8"/>
+              <line x1="78" y1="21" x2="82" y2="21" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"/>
+              <line x1="78" y1="43" x2="82" y2="43" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+              <line x1="78" y1="65" x2="82" y2="65" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <div class="service-visual-label">HVAC SYSTEMS</div>
+          </div>
+        </div>
+        <div class="service-text">
+          <span class="section-tag">Service 02</span>
+          <h2>HVAC System <span class="accent">Installation</span></h2>
+          <p>Comprehensive HVAC systems for commercial, industrial and institutional buildings. We design and install complete systems incorporating chilled water plants, air handling units, fan coil units, ductwork, controls and building management interfaces.</p>
+          <ul class="service-bullets">
+            <li>Central HVAC design and engineering</li>
+            <li>Chiller-based systems for large buildings</li>
+            <li>Air Handling Unit (AHU) installation</li>
+            <li>Duct fabrication, insulation and installation</li>
+            <li>Grille, diffuser and damper setup</li>
+            <li>Controls and thermostat wiring</li>
+            <li>System balancing and commissioning</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary">Enquire Now →</a>
+        </div>
+      </div>
+
+      <!-- ---- 03. AMC / CAMC ---- -->
+      <div class="service-section reveal">
+        <div class="service-visual">
+          <div class="service-visual-box tilt-card">
+            <svg class="service-big-icon" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M44 12 C44 12 22 22 22 44 C22 58 31 72 44 78 C57 72 66 58 66 44 C66 22 44 12 44 12Z" stroke="#38bdf8" stroke-width="2.5" stroke-linejoin="round"/>
+              <path d="M34 44 L40 52 L56 36" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="44" cy="44" r="6" stroke="#38bdf8" stroke-width="1.5" opacity="0.3"/>
+            </svg>
+            <div class="service-visual-label">AMC / CAMC</div>
+          </div>
+        </div>
+        <div class="service-text">
+          <span class="section-tag">Service 03</span>
+          <h2>AMC / CAMC <span class="accent">Contracts</span></h2>
+          <p>Keep your investment protected and your comfort guaranteed with our flexible maintenance contracts. We offer Annual Maintenance Contracts (AMC) for labour coverage and Comprehensive AMC (CAMC) covering both labour and spare parts — giving you complete peace of mind.</p>
+          <ul class="service-bullets">
+            <li>Scheduled preventive maintenance visits (quarterly/bi-annual)</li>
+            <li>Filter cleaning, coil washing, condensate drain flushing</li>
+            <li>Refrigerant level check and top-up (CAMC)</li>
+            <li>Electrical connections and capacitor check</li>
+            <li>Priority emergency breakdown response</li>
+            <li>Annual performance reports and health summary</li>
+            <li>Spare parts sourcing at discounted rates</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary">Enquire Now →</a>
+        </div>
+      </div>
+
+      <!-- ---- 04. VENTILATION ---- -->
+      <div class="service-section reversed reveal">
+        <div class="service-visual">
+          <div class="service-visual-box tilt-card">
+            <svg class="service-big-icon" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="44" cy="44" r="10" stroke="#38bdf8" stroke-width="2.5"/>
+              <circle cx="44" cy="44" r="22" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.4"/>
+              <!-- Fan blades -->
+              <path d="M44 34 C44 26 50 16 44 14 C33 14 26 34 34 34" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M53 49 C60 51 70 47 68 40 C64 28 47 32 47 40" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+              <path d="M35 53 C28 57 22 68 30 73 C42 79 54 63 47 56" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+            </svg>
+            <div class="service-visual-label">VENTILATION</div>
+          </div>
+        </div>
+        <div class="service-text">
+          <span class="section-tag">Service 04</span>
+          <h2>Ventilation &amp; <span class="accent">Fresh Air</span> Systems</h2>
+          <p>Healthy indoor air quality goes beyond cooling — it requires proper ventilation, fresh air exchange and humidity control. We design and install mechanical ventilation systems that remove stale air, control pollutants and maintain optimal CO₂ levels for occupant wellbeing.</p>
+          <ul class="service-bullets">
+            <li>Fresh Air Handling Units (FAHU / ERV)</li>
+            <li>Exhaust ventilation for kitchens, bathrooms and car parks</li>
+            <li>Positive pressure ventilation for server rooms</li>
+            <li>HEPA and activated carbon filtration systems</li>
+            <li>Kitchen exhaust hood and grease duct installation</li>
+            <li>Stairwell and basement pressurisation systems</li>
+            <li>Smoke extraction and fire-rated duct installations</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary">Enquire Now →</a>
+        </div>
+      </div>
+
+      <!-- ---- 05. REPAIR & MAINTENANCE ---- -->
+      <div class="service-section reveal">
+        <div class="service-visual">
+          <div class="service-visual-box tilt-card">
+            <svg class="service-big-icon" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M58 18 C70 18 76 30 72 42 L60 54 L64 60 L50 74 C44 80 30 80 24 74 C18 68 18 54 24 48 L38 34 L44 38 L56 26 Z" stroke="#38bdf8" stroke-width="2.5" stroke-linejoin="round"/>
+              <line x1="52" y1="36" x2="30" y2="58" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+              <circle cx="28" cy="60" r="4" fill="#38bdf8" opacity="0.7"/>
+              <circle cx="36" cy="52" r="2.5" fill="#38bdf8" opacity="0.4"/>
+            </svg>
+            <div class="service-visual-label">REPAIR</div>
+          </div>
+        </div>
+        <div class="service-text">
+          <span class="section-tag">Service 05</span>
+          <h2>Repair &amp; <span class="accent">Maintenance</span></h2>
+          <p>Equipment breakdowns don't wait for business hours. Our rapid-response repair team handles all AC and HVAC faults with precision diagnostics, genuine spare parts and lasting fixes. We service all major brands — Daikin, Voltas, Blue Star, Hitachi, LG, Samsung, Carrier and more.</p>
+          <ul class="service-bullets">
+            <li>Emergency breakdown response (same day)</li>
+            <li>AC not cooling — refrigerant leak detection and repair</li>
+            <li>Compressor, PCB and capacitor replacement</li>
+            <li>Thermostat and controls troubleshooting</li>
+            <li>Drainage blockage and pan cleaning</li>
+            <li>Noisy unit diagnosis and vibration isolation</li>
+            <li>Post-warranty repair for all AC brands</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary">Enquire Now →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===== CTA STRIP ===== -->
+  <div class="cta-strip">
+    <div class="container">
+      <span class="section-tag reveal">Free Consultation</span>
+      <h2 class="reveal reveal-delay-1">Not Sure Which <span class="accent">Service</span> You Need?</h2>
+      <p class="reveal reveal-delay-2">Talk to our experts. We'll assess your space, recommend the right solution and provide a transparent, no-obligation quote.</p>
+      <a href="contact.html" class="btn btn-primary btn-glow reveal reveal-delay-3">Get a Free Quote</a>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo-main">COOL AIR</div>
+          <div class="footer-logo-sub">Enterprises</div>
+          <p class="footer-tagline">"Precision Cooling. Trusted Service."<br>Mumbai's preferred HVAC partner for residential, commercial and healthcare projects.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">AC Installation</a></li>
+            <li><a href="services.html">HVAC Systems</a></li>
+            <li><a href="services.html">AMC / CAMC</a></li>
+            <li><a href="services.html">Ventilation</a></li>
+            <li><a href="services.html">Repair &amp; Maintenance</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">
+              <svg viewBox="0 0 24 24" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.66A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <span>+91 70213 01676</span>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">
+              <svg viewBox="0 0 24 24" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <span>coolair.enterprises@gmail.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">
+              <svg viewBox="0 0 24 24" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <span>Ghatkopar West, Mumbai — 400086</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Cool Air Enterprises. All rights reserved.</p>
+        <p>Serving Mumbai since 2014</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Button -->
+  <a class="wa-btn" href="https://wa.me/917021301676" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="white">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>

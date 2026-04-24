@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cool Air Enterprises — HVAC & Air Conditioning Mumbai</title>
+  <meta name="description" content="Cool Air Enterprises offers premium HVAC & air conditioning installation, maintenance and repair services across Mumbai. 10+ years of trusted service." />
+
+  <!-- Favicon: geometric snowflake SVG -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cg stroke='%2338bdf8' stroke-width='2' stroke-linecap='round'%3E%3Cline x1='16' y1='3' x2='16' y2='29'/%3E%3Cline x1='3' y1='16' x2='29' y2='16'/%3E%3Cline x1='7.5' y1='7.5' x2='24.5' y2='24.5'/%3E%3Cline x1='24.5' y1='7.5' x2='7.5' y2='24.5'/%3E%3Cline x1='16' y1='8' x2='13' y2='5'/%3E%3Cline x1='16' y1='8' x2='19' y2='5'/%3E%3Cline x1='24' y1='16' x2='27' y2='13'/%3E%3Cline x1='24' y1='16' x2='27' y2='19'/%3E%3Cline x1='16' y1='24' x2='13' y2='27'/%3E%3Cline x1='16' y1='24' x2='19' y2='27'/%3E%3Cline x1='8' y1='16' x2='5' y2='13'/%3E%3Cline x1='8' y1='16' x2='5' y2='19'/%3E%3C/g%3E%3C/svg%3E" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Three.js CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="nav-logo-main">COOL AIR</span>
+        <span class="nav-logo-sub">Enterprises</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-vignette"></div>
+    <div class="hero-content">
+      <div class="hero-tag">Trusted HVAC Experts in Mumbai</div>
+      <h1>Complete HVAC &amp;<br><span class="accent">Air Conditioning</span><br>Solutions</h1>
+      <p class="hero-sub">Precision-engineered comfort for residential, commercial and healthcare spaces. Built to last. Maintained to perfection.</p>
+      <div class="hero-btns">
+        <a href="contact.html" class="btn btn-primary btn-glow">Get a Free Quote</a>
+        <a href="tel:+917021301676" class="btn btn-outline">Call Now: 7021301676</a>
+      </div>
+      <div class="scroll-cue">
+        <span class="scroll-cue-label">Scroll</span>
+        <div class="scroll-cue-arrow"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES SNAPSHOT ===== -->
+  <section class="section services-snapshot" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What We Do</span>
+        <h2 class="underline-draw reveal">Our <span class="accent">Core Services</span></h2>
+        <p class="section-subtitle reveal reveal-delay-1">From precision installation to round-the-clock maintenance — we cover every aspect of your climate control needs.</p>
+      </div>
+      <div class="services-grid">
+
+        <!-- AC Installation -->
+        <div class="service-card reveal reveal-delay-1">
+          <svg class="service-card-icon" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="6" y="14" width="40" height="18" rx="4" stroke="#38bdf8" stroke-width="2"/>
+            <line x1="6" y1="24" x2="46" y2="24" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="3 2"/>
+            <circle cx="38" cy="19" r="2" fill="#38bdf8"/>
+            <circle cx="32" cy="19" r="2" fill="#38bdf8"/>
+            <line x1="16" y1="32" x2="16" y2="40" stroke="#38bdf8" stroke-width="2"/>
+            <line x1="36" y1="32" x2="36" y2="40" stroke="#38bdf8" stroke-width="2"/>
+            <line x1="12" y1="40" x2="40" y2="40" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"/>
+            <path d="M13 29 Q13 34 18 34" stroke="#38bdf8" stroke-width="1.5" fill="none"/>
+            <path d="M21 29 Q21 34 26 34" stroke="#38bdf8" stroke-width="1.5" fill="none"/>
+          </svg>
+          <h3>AC Installation</h3>
+          <p>Expert installation of Split, Window, Cassette, VRV and Ductable systems — residential &amp; commercial.</p>
+          <a href="services.html" class="service-card-link">Learn More <span>→</span></a>
+        </div>
+
+        <!-- HVAC Systems -->
+        <div class="service-card reveal reveal-delay-2">
+          <svg class="service-card-icon" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="8" y="10" width="36" height="8" rx="2" stroke="#38bdf8" stroke-width="2"/>
+            <rect x="8" y="22" width="36" height="8" rx="2" stroke="#38bdf8" stroke-width="2"/>
+            <rect x="8" y="34" width="36" height="8" rx="2" stroke="#38bdf8" stroke-width="2"/>
+            <line x1="20" y1="10" x2="20" y2="42" stroke="#38bdf8" stroke-width="1.2" stroke-dasharray="2 2" opacity="0.5"/>
+            <circle cx="38" cy="14" r="2" fill="#38bdf8"/>
+            <circle cx="38" cy="26" r="2" fill="#0ea5e9" opacity="0.7"/>
+            <circle cx="38" cy="38" r="2" fill="#38bdf8"/>
+          </svg>
+          <h3>HVAC Systems</h3>
+          <p>Complete HVAC system design, supply and installation for offices, malls, hospitals and large buildings.</p>
+          <a href="services.html" class="service-card-link">Learn More <span>→</span></a>
+        </div>
+
+        <!-- AMC / CAMC -->
+        <div class="service-card reveal reveal-delay-3">
+          <svg class="service-card-icon" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M26 8 C26 8 14 14 14 26 C14 33 19 40 26 44 C33 40 38 33 38 26 C38 14 26 8 26 8Z" stroke="#38bdf8" stroke-width="2"/>
+            <path d="M20 26 L24 30 L32 22" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <h3>AMC / CAMC</h3>
+          <p>Annual &amp; Comprehensive maintenance contracts ensuring peak performance, zero downtime and extended equipment life.</p>
+          <a href="services.html" class="service-card-link">Learn More <span>→</span></a>
+        </div>
+
+        <!-- Ventilation -->
+        <div class="service-card reveal reveal-delay-4">
+          <svg class="service-card-icon" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="26" cy="26" r="6" stroke="#38bdf8" stroke-width="2"/>
+            <path d="M26 20 C26 14 30 8 26 8 C18 8 14 20 20 20" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"/>
+            <path d="M31 29 C36 30 42 27 40 22 C37 14 26 17 26 23" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+            <path d="M21 31 C16 33 12 40 17 43 C24 47 30 37 26 32" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+          </svg>
+          <h3>Ventilation Systems</h3>
+          <p>Fresh air ventilation, exhaust fans and ERV solutions engineered for healthy indoor air quality.</p>
+          <a href="services.html" class="service-card-link">Learn More <span>→</span></a>
+        </div>
+
+        <!-- Repair & Maintenance -->
+        <div class="service-card reveal reveal-delay-5">
+          <svg class="service-card-icon" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M32 10 C38 10 42 16 40 22 L34 28 L36 32 L28 40 C24 44 16 44 12 40 C8 36 8 28 12 24 L20 16 L24 18 L30 12 Z" stroke="#38bdf8" stroke-width="2" stroke-linejoin="round"/>
+            <line x1="30" y1="22" x2="18" y2="34" stroke="#38bdf8" stroke-width="1.5" stroke-linecap="round"/>
+            <circle cx="17" cy="35" r="2.5" fill="#38bdf8" opacity="0.7"/>
+          </svg>
+          <h3>Repair &amp; Maintenance</h3>
+          <p>Fast, reliable diagnostics and repair for all AC and HVAC brands. On-call technicians, genuine spare parts.</p>
+          <a href="services.html" class="service-card-link">Learn More <span>→</span></a>
+        </div>
+
+      </div><!-- .services-grid -->
+    </div>
+  </section>
+
+  <!-- ===== STATS BAR ===== -->
+  <div class="stats-bar">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal">
+          <div class="stat-num" data-count="10" data-suffix="+">10+</div>
+          <div class="stat-label">Years of Experience</div>
+        </div>
+        <div class="stat-item reveal reveal-delay-2">
+          <div class="stat-num" data-count="50" data-suffix="+">50+</div>
+          <div class="stat-label">Projects Completed</div>
+        </div>
+        <div class="stat-item reveal reveal-delay-3">
+          <div class="stat-num" data-count="3" data-suffix="+">3+</div>
+          <div class="stat-label">Hospital Clients</div>
+        </div>
+        <div class="stat-item reveal reveal-delay-4">
+          <div class="stat-num" data-count="100" data-suffix="%">100%</div>
+          <div class="stat-label">Satisfaction Rate</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== PROJECTS TEASER ===== -->
+  <section class="section projects-teaser">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Our Work</span>
+        <h2 class="underline-draw reveal">Featured <span class="accent">Projects</span></h2>
+        <p class="section-subtitle reveal reveal-delay-1">Trusted by retail giants, corporates and healthcare institutions across Mumbai.</p>
+      </div>
+
+      <div class="proj-grid">
+        <!-- Project 1 -->
+        <div class="proj-card reveal reveal-delay-1">
+          <div class="proj-card-bg proj-card-bg-1"></div>
+          <div class="proj-card-overlay"></div>
+          <div class="proj-card-content">
+            <span class="proj-sector">Retail</span>
+            <h3>Waman Hari Pethe Jewellers</h3>
+            <p>Premium showroom AC solutions delivering comfort cooling with aesthetic, concealed installation.</p>
+            <a href="projects.html" class="proj-cta">View Project →</a>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="proj-card reveal reveal-delay-2">
+          <div class="proj-card-bg proj-card-bg-2"></div>
+          <div class="proj-card-overlay"></div>
+          <div class="proj-card-content">
+            <span class="proj-sector">Commercial</span>
+            <h3>Clancy Global</h3>
+            <p>Full HVAC system installation and ongoing CAMC for a dynamic corporate workspace environment.</p>
+            <a href="projects.html" class="proj-cta">View Project →</a>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="proj-card reveal reveal-delay-3">
+          <div class="proj-card-bg proj-card-bg-3"></div>
+          <div class="proj-card-overlay"></div>
+          <div class="proj-card-content">
+            <span class="proj-sector">Healthcare</span>
+            <h3>Cloudnine Hospital</h3>
+            <p>Hospital-grade ventilation, precision temperature control and infection-compliant air systems.</p>
+            <a href="projects.html" class="proj-cta">View Project →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-center reveal">
+        <a href="projects.html" class="btn btn-outline">View All Projects →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY CHOOSE US ===== -->
+  <section class="section why-us">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Why Cool Air</span>
+        <h2 class="underline-draw reveal">The <span class="accent">Cool Air</span> Difference</h2>
+      </div>
+      <div class="why-grid">
+
+        <div class="why-item reveal reveal-delay-1">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" stroke-width="1.8"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+          </div>
+          <div>
+            <h4>10+ Years Expertise</h4>
+            <p>Over a decade of delivering climate control excellence across Mumbai &amp; beyond.</p>
+          </div>
+        </div>
+
+        <div class="why-item reveal reveal-delay-2">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+          </div>
+          <div>
+            <h4>Certified Technicians</h4>
+            <p>Trained, background-verified engineers handling every installation and repair.</p>
+          </div>
+        </div>
+
+        <div class="why-item reveal reveal-delay-3">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div>
+            <h4>24/7 Support</h4>
+            <p>Emergency breakdown assistance and round-the-clock service response for AMC clients.</p>
+          </div>
+        </div>
+
+        <div class="why-item reveal reveal-delay-4">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" stroke-width="1.8"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <div>
+            <h4>Genuine Parts Only</h4>
+            <p>OEM components, branded refrigerants and no shortcuts — ever.</p>
+          </div>
+        </div>
+
+        <div class="why-item reveal reveal-delay-5">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" stroke-width="1.8"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <div>
+            <h4>Rapid Turnaround</h4>
+            <p>Same-day service for breakdowns, next-day for installations in most Mumbai zones.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BANNER ===== -->
+  <section class="cta-banner">
+    <div class="container">
+      <span class="section-tag reveal">Ready to Cool Down?</span>
+      <h2 class="reveal reveal-delay-1">Ready to <span class="accent">Upgrade</span> Your Space?</h2>
+      <p class="reveal reveal-delay-2">Get a no-obligation quote from Mumbai's most trusted HVAC specialists. Fast turnaround, transparent pricing.</p>
+      <a href="contact.html" class="btn btn-primary btn-glow reveal reveal-delay-3">Get a Free Quote Today</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand -->
+        <div>
+          <div class="footer-logo-main">COOL AIR</div>
+          <div class="footer-logo-sub">Enterprises</div>
+          <p class="footer-tagline">"Precision Cooling. Trusted Service."<br>Mumbai's preferred HVAC partner for residential, commercial and healthcare projects.</p>
+        </div>
+        <!-- Col 2: Quick Links -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <!-- Col 3: Services -->
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">AC Installation</a></li>
+            <li><a href="services.html">HVAC Systems</a></li>
+            <li><a href="services.html">AMC / CAMC</a></li>
+            <li><a href="services.html">Ventilation</a></li>
+            <li><a href="services.html">Repair &amp; Maintenance</a></li>
+          </ul>
+        </div>
+        <!-- Col 4: Contact -->
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">
+              <svg viewBox="0 0 24 24" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.66A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <span>+91 70213 01676</span>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">
+              <svg viewBox="0 0 24 24" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <span>coolair.enterprises@gmail.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">
+              <svg viewBox="0 0 24 24" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <span>Ghatkopar West, Mumbai — 400086</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Cool Air Enterprises. All rights reserved.</p>
+        <p>Serving Mumbai since 2014</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Button -->
+  <a class="wa-btn" href="https://wa.me/917021301676" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="white">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>

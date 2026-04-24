@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Cool Air Enterprises | Mumbai HVAC</title>
+  <meta name="description" content="Contact Cool Air Enterprises for AC installation, HVAC services and maintenance in Mumbai. Get a free quote today." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cg stroke='%2338bdf8' stroke-width='2' stroke-linecap='round'%3E%3Cline x1='16' y1='3' x2='16' y2='29'/%3E%3Cline x1='3' y1='16' x2='29' y2='16'/%3E%3Cline x1='7.5' y1='7.5' x2='24.5' y2='24.5'/%3E%3Cline x1='24.5' y1='7.5' x2='7.5' y2='24.5'/%3E%3Cline x1='16' y1='8' x2='13' y2='5'/%3E%3Cline x1='16' y1='8' x2='19' y2='5'/%3E%3Cline x1='24' y1='16' x2='27' y2='13'/%3E%3Cline x1='24' y1='16' x2='27' y2='19'/%3E%3Cline x1='16' y1='24' x2='13' y2='27'/%3E%3Cline x1='16' y1='24' x2='19' y2='27'/%3E%3Cline x1='8' y1='16' x2='5' y2='13'/%3E%3Cline x1='8' y1='16' x2='5' y2='19'/%3E%3C/g%3E%3C/svg%3E" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Three.js CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="nav-logo-main">COOL AIR</span>
+        <span class="nav-logo-sub">Enterprises</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- ===== PAGE HERO ===== -->
+  <header class="page-hero">
+    <canvas class="page-hero-canvas" id="page-hero-canvas"></canvas>
+    <div class="page-hero-gradient"></div>
+    <div class="container page-hero-content">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="sep">/</span>
+        <span>Contact</span>
+      </div>
+      <h1>Get In <span class="accent">Touch</span></h1>
+      <p class="subheading" style="margin-top:16px; max-width:520px;">We respond within 24 hours. Get a free, no-obligation quote for your project today.</p>
+    </div>
+  </header>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="section contact-page">
+    <div class="container">
+
+      <div class="contact-layout">
+
+        <!-- ---- LEFT: FORM ---- -->
+        <div class="reveal">
+          <form id="contact-form" novalidate>
+            <!-- Fields wrapper (hidden on success) -->
+            <div class="form-fields">
+              <div class="contact-form-wrap">
+                <h2>Send an <span class="accent">Enquiry</span></h2>
+                <p class="form-sub">Fill in the details below and we'll get back to you within 24 hours.</p>
+
+                <!-- Full Name -->
+                <div class="form-group" data-field="name">
+                  <label for="field-name">Full Name</label>
+                  <input type="text" id="field-name" name="name" placeholder="e.g. Rahul Sharma" autocomplete="name" />
+                  <span class="field-line"></span>
+                  <span class="form-error-msg">Please enter your full name.</span>
+                </div>
+
+                <!-- Phone -->
+                <div class="form-group" data-field="phone">
+                  <label for="field-phone">Phone Number</label>
+                  <input type="tel" id="field-phone" name="phone" placeholder="e.g. 9876543210" autocomplete="tel" maxlength="10" />
+                  <span class="field-line"></span>
+                  <span class="form-error-msg">Enter a valid 10-digit mobile number.</span>
+                </div>
+
+                <!-- Email -->
+                <div class="form-group" data-field="email">
+                  <label for="field-email">Email Address</label>
+                  <input type="email" id="field-email" name="email" placeholder="e.g. rahul@example.com" autocomplete="email" />
+                  <span class="field-line"></span>
+                  <span class="form-error-msg">Enter a valid email address.</span>
+                </div>
+
+                <!-- Service Required -->
+                <div class="form-group" data-field="service">
+                  <label for="field-service">Service Required</label>
+                  <select id="field-service" name="service">
+                    <option value="">— Select a Service —</option>
+                    <option value="ac-installation">AC Installation</option>
+                    <option value="hvac-system">HVAC System Installation</option>
+                    <option value="amc">AMC / CAMC Contract</option>
+                    <option value="ventilation">Ventilation &amp; Fresh Air</option>
+                    <option value="repair">Repair &amp; Maintenance</option>
+                    <option value="other">Other / Not Sure</option>
+                  </select>
+                  <span class="field-line"></span>
+                  <span class="form-error-msg">Please select a service.</span>
+                </div>
+
+                <!-- Message -->
+                <div class="form-group" data-field="message">
+                  <label for="field-message">Your Message</label>
+                  <textarea id="field-message" name="message" rows="4" placeholder="Tell us about your space, requirements or any questions you have..."></textarea>
+                  <span class="field-line"></span>
+                  <span class="form-error-msg">Message must be at least 20 characters.</span>
+                </div>
+
+                <button type="submit" class="form-submit">Send Enquiry →</button>
+              </div>
+            </div>
+
+            <!-- Success State -->
+            <div class="form-success contact-form-wrap" style="min-height: 420px;">
+              <svg class="success-icon" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="36" cy="36" r="32" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
+                <path d="M22 36 L32 46 L50 28" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <h3>Enquiry Sent!</h3>
+              <p>Thank you for reaching out to Cool Air Enterprises.<br>We'll contact you within <strong style="color:var(--accent)">24 hours</strong> to discuss your requirements.</p>
+              <a href="index.html" class="btn btn-outline btn-sm" style="margin-top:12px;">← Back to Home</a>
+            </div>
+          </form>
+        </div>
+
+        <!-- ---- RIGHT: CONTACT INFO ---- -->
+        <div>
+          <span class="section-tag reveal">Reach Us</span>
+          <h2 class="reveal reveal-delay-1" style="margin-bottom:10px; font-size:clamp(1.8rem,3.5vw,2.6rem);">We're <span class="accent">Here</span> for You</h2>
+          <p class="reveal reveal-delay-2" style="font-size:0.95rem; color:var(--text); margin-bottom:36px; line-height:1.75;">Reach out via phone, WhatsApp or email. Our team is available Monday to Saturday, 9 AM to 7 PM. Emergency support available for AMC clients 24/7.</p>
+
+          <div class="contact-info-wrap">
+
+            <!-- Phone -->
+            <div class="contact-info-card reveal reveal-delay-1">
+              <div class="info-icon-circle">
+                <svg viewBox="0 0 24 24" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.66A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+                </svg>
+              </div>
+              <div class="info-card-text">
+                <div class="info-card-label">Phone</div>
+                <div class="info-card-value"><a href="tel:+917021301676">+91 70213 01676</a></div>
+              </div>
+            </div>
+
+            <!-- WhatsApp -->
+            <div class="contact-info-card wa-card reveal reveal-delay-2">
+              <div class="info-icon-circle wa">
+                <svg viewBox="0 0 24 24" fill="#25D366">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                </svg>
+              </div>
+              <div class="info-card-text">
+                <div class="info-card-label">WhatsApp</div>
+                <div class="info-card-value"><a href="https://wa.me/917021301676" target="_blank" rel="noopener" style="color:#25D366;">+91 70213 01676</a></div>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="contact-info-card reveal reveal-delay-3">
+              <div class="info-icon-circle">
+                <svg viewBox="0 0 24 24" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </div>
+              <div class="info-card-text">
+                <div class="info-card-label">Email</div>
+                <div class="info-card-value"><a href="mailto:coolair.enterprises@gmail.com">coolair.enterprises@gmail.com</a></div>
+              </div>
+            </div>
+
+            <!-- Address -->
+            <div class="contact-info-card reveal reveal-delay-4">
+              <div class="info-icon-circle">
+                <svg viewBox="0 0 24 24" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <div class="info-card-text">
+                <div class="info-card-label">Address</div>
+                <div class="info-card-value">Ghatkopar West, Mumbai — 400086<br><span style="font-size:0.82rem; color:var(--text-muted);">Maharashtra, India</span></div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Business Hours -->
+          <div class="reveal reveal-delay-5" style="margin-top:32px; padding:24px 28px; background:var(--bg-elevated); border:1px solid var(--border); border-radius:var(--radius);">
+            <div style="font-family:var(--ff-sub); font-size:0.7rem; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:var(--accent); margin-bottom:16px;">Business Hours</div>
+            <div style="display:flex; flex-direction:column; gap:8px;">
+              <div style="display:flex; justify-content:space-between; font-size:0.88rem; color:var(--text);">
+                <span>Monday — Saturday</span>
+                <span style="color:var(--white);">9:00 AM — 7:00 PM</span>
+              </div>
+              <div style="display:flex; justify-content:space-between; font-size:0.88rem; color:var(--text-muted);">
+                <span>Sunday</span>
+                <span>Closed (AMC clients: 24/7)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MAP ===== -->
+  <div class="map-section">
+    <div class="container">
+      <div class="map-wrap reveal">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15080.255714987524!2d72.90406!3d19.08540!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c627e4e5e9e7%3A0x8b34ec3b7e04c9c5!2sGhatkopar%20West%2C%20Mumbai%2C%20Maharashtra%20400086!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Cool Air Enterprises Location — Ghatkopar West, Mumbai">
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo-main">COOL AIR</div>
+          <div class="footer-logo-sub">Enterprises</div>
+          <p class="footer-tagline">"Precision Cooling. Trusted Service."<br>Mumbai's preferred HVAC partner for residential, commercial and healthcare projects.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">AC Installation</a></li>
+            <li><a href="services.html">HVAC Systems</a></li>
+            <li><a href="services.html">AMC / CAMC</a></li>
+            <li><a href="services.html">Ventilation</a></li>
+            <li><a href="services.html">Repair &amp; Maintenance</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">
+              <svg viewBox="0 0 24 24" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.66A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <span>+91 70213 01676</span>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">
+              <svg viewBox="0 0 24 24" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <span>coolair.enterprises@gmail.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">
+              <svg viewBox="0 0 24 24" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <span>Ghatkopar West, Mumbai — 400086</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Cool Air Enterprises. All rights reserved.</p>
+        <p>Serving Mumbai since 2014</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Button -->
+  <a class="wa-btn" href="https://wa.me/917021301676" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="white">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
